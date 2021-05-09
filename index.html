@@ -55,6 +55,49 @@
 			 padding-right:30px;
 	}
 	
+	/*css code for the fade in pictures of projects*/
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+/*.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #faf0e6;
+}
+
+.container:hover .overlay {
+  opacity: .90;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+	/*end of css for picture overlay*/
+	
+	
   </style>
   <title>Jacks Portfolio</title>
   <head>
@@ -63,16 +106,14 @@
 		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
 
-<body>
-  <div class="body1">
+<body class="body1">
+  
     <h1>Jacks Portfolio</h1>
 	<br>
     <div class="contactInfoStyle">
       <p>jackpatrickwoo@gmail.com</p>
     </div>
 	<br>
-    
-      
 	  <br>
 	  <!--photos that contain links to different pages-->
 	  <!--resume picture -->
@@ -89,7 +130,31 @@
 	  </a>
 	  <br><br>
 	  <p>I create software.</p>
-    
-  </div>
-</body>
+	  <br><br>
+	  <h3>Projects</h3>
+	  <div class="container">
+	  	   <a href="marioProjectUnreal.html">
+  	  	   <img src="images/unrealLogo.png" alt="Avatar" class="image" width="225" height="130">
+		   
+  		   	<div class="overlay">
+    			<div class="text">Mario 1-1 Clone</div>
+  			</div>
+			</a>
+	</div>
+	  
+	  <div class="container">
+	  	   <a href="marioProjectUnreal.html">
+  	  	   <img src="images/unrealLogo.png" alt="Avatar" class="image" width="225" height="130">
+		   
+  		   	<div class="overlay">
+    			<div class="text">My Other project</div>
+  			</div>
+			</a>
+	</div>
+	  
+	  
+	  
+    </body>
+  
+
 </html>
