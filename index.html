@@ -59,6 +59,9 @@
 	.container {
   position: relative;
   width: 50%;
+  height:50%;
+  left: 60px;
+  right: 230px;
 }
 
 /*.image {
@@ -67,20 +70,20 @@
   height: auto;
 }*/
 
-.overlay {
+.overlayUnreal {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 240px; /*note that the these are the offsets for the overlay, will need to fine tune to each picture*/
+  right: 240px;
   height: 100%;
-  width: 100%;
+  width: 50%;
   opacity: 0;
   transition: .5s ease;
   background-color: #faf0e6;
 }
 
-.container:hover .overlay {
+.container:hover .overlayUnreal {
   opacity: .90;
 }
 
@@ -134,9 +137,9 @@
 	  <h3>Projects</h3>
 	  <div class="container">
 	  	   <a href="marioProjectUnreal.html">
-  	  	   <img src="images/unrealLogo.png" alt="Avatar" class="image" width="225" height="130">
+  	  	   <img src="images/unrealLogo.png" alt="unreal" class="image" width="450" height="260">
 		   
-  		   	<div class="overlay">
+  		   	<div class="overlayUnreal">
     			<div class="text">Mario 1-1 Clone</div>
   			</div>
 			</a>
@@ -144,9 +147,9 @@
 	  
 	  <div class="container">
 	  	   <a href="marioProjectUnreal.html">
-  	  	   <img src="images/unrealLogo.png" alt="Avatar" class="image" width="225" height="130">
+  	  	   <img src="images/unrealLogo.png" alt="unreal" class="image" width="450" height="260" >
 		   
-  		   	<div class="overlay">
+  		   	<div class="overlayUnreal">
     			<div class="text">My Other project</div>
   			</div>
 			</a>
