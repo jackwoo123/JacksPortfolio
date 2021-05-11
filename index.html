@@ -59,7 +59,7 @@
 	.container { /*container holds everything below*/
   position: relative;
   width: 450px;
-  height:50%;
+  height:100%;
   left: 50px;
   right: 0px;
 }
@@ -80,7 +80,7 @@
   width: auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: #faf0e6;
+  background-color: /*#0000FF use for debugging*/ #faf0e6;
 }
 
 .container:hover .overlayUnreal {
@@ -99,7 +99,17 @@
   text-align: center;
 }
 	/*end of css for picture overlay*/
+	/*css for row placement of images.*/
 	
+	.row{
+		 display:flex;
+	 }
+	.column{
+			flex: 33.33%;
+			padding:5px;
+	 }
+	
+	/*end of row placement of images*/
 	
   </style>
   <title>Jacks Portfolio</title>
@@ -135,6 +145,10 @@
 	  <p>I create software.</p>
 	  <br><br>
 	  <h3>Projects</h3>
+	  <!--rows for each individual picture-->
+	  <div class="row">
+	  	   <div class="column">
+	  <!--individual picture-->
 	  <div class="container">
 	  	   <a href="marioProjectUnreal.html">
   	  	   <img src="images/unrealLogo.png" alt="unreal" class="image" width="450" height="260">
@@ -144,7 +158,8 @@
   			</div>
 			</a>
 	</div>
-	  
+	</div>
+	<div class="column">
 	  <div class="container">
 	  	   <a href="marioProjectUnreal.html">
   	  	   <img src="images/unrealLogo.png" alt="unreal" class="image" width="450" height="260" >
@@ -153,6 +168,7 @@
     			<div class="text">My Other project</div>
   			</div>
 			</a>
+	</div>
 	</div>
 	  
 	  
