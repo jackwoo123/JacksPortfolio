@@ -56,7 +56,15 @@
 	}
 
 	/*css code for the fade in pictures of projects*/
-	.container { /*container holds everything below*/
+.container { /*container holds everything below*/
+  position: relative;
+  width: 450px;
+  height:100%;
+  left: 50px;
+  right: 0px;
+}
+
+.containerOsu { /*container holds everything below*/
   position: relative;
   width: 450px;
   height:100%;
@@ -83,7 +91,25 @@
   background-color: /*#0000FF use for debugging*/ #faf0e6;
 }
 
+.overlayOsu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px; /*note that the these are the offsets for the overlay, will need to fine tune to each picture*/
+  right: 0px;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: /*#0000FF use for debugging*/ #faf0e6;
+}
+
+
 .container:hover .overlayUnreal {
+  opacity: .90;
+}
+
+.containerOsu:hover .overlayOsu{
   opacity: .90;
 }
 
@@ -160,18 +186,34 @@
 	</div>
 	</div>
 	<div class="column">
-	  <div class="container">
+	  <div class="containerOsu">
 	  	   <a href="OhioStateClasses.html">
   	  	   <img src="images/osuLogo.png" alt="osu" class="image" width="100%" height="100%" >
 
-  		   	<div class="overlayUnreal">
+  		   	<div class="overlayOsu">
     			<div class="text">Ohio State Classes</div>
   			</div>
 			</a>
 	</div>
 	</div>
+</div>
+  <div class="row">
+    <div class="column">
+
+      <div class="container">
+  	  	   <a href="OhioStateClasses.html">
+    	  	   <img src="images/osuLogo.png" alt="osu" class="image" width="100%" height="100%" >
+
+    		   	<div class="overlayUnreal">
+      			<div class="text">Ohio State Classes</div>
+    			</div>
+  			</a>
 
 
+    </div>
+  </div>
+
+  </div>
 
     </body>
 
