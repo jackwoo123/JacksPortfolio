@@ -58,10 +58,11 @@
 	/*css code for the fade in pictures of projects*/
 .container { /*container holds everything below*/
   position: relative;
-  width: 450px;
-  height:260;
-  left: 50px;
+  width: 50%;
+  height: 100%;
+  left: 0px;
   right: 0px;
+  
 }
 
 .containerOsu { /*container holds everything below*/
@@ -88,7 +89,7 @@
   width: auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: /*#0000FF use for debugging*/ #faf0e6;
+  background-color: /*#0000FF /*use for debugging*/ #faf0e6;
 }
 
 .overlayOsu {
@@ -128,12 +129,19 @@
 	/*css for row placement of images.*/
 
 	.row{
+		 padding-top:30px;
 		 display:flex;
+		 
 	 }
-	.column{
-			flex: 33.33%;
-			padding:5px;
+	.firstColumn{
+			flex: 0%;
+			padding-left:250px;
 	 }
+	 .secondColumn{
+	 		flex: 0%;
+			padding:0px;
+	 
+	  }
 
 	/*end of row placement of images*/
 
@@ -173,7 +181,7 @@
 	  <h3>Projects</h3>
 	  <!--rows for each individual picture-->
 	  <div class="row">
-	  	   <div class="column">
+	  	   <div class="firstColumn">
 	  <!--individual picture-->
 	  		<div class="container">
 	  	   <a href="marioProjectUnreal.html">
@@ -183,26 +191,26 @@
     			<div class="text">Mario 1-1 Clone</div>
   			</div>
 			</a>
+			</div>
 	</div>
-	</div>
-	<div class="column">
-	  <div class="containerOsu">
+	<div class="secondColumn">
+	  <div class="container">
 	  	   <a href="OhioStateClasses.html">
-  	  	   <img src="images/osuLogo.png" alt="osu" class="image" width="40%" height="100%" >
+  	  	   <img src="images/osuLogo.png" alt="osu" class="image" width="60%" height="100%" >
 
-  		   	<div class="overlayOsu">
+  		   	<div class="overlayUnreal">
     			<div class="text">Ohio State Classes</div>
   			</div>
 			</a>
-	</div>
+			</div>
 	</div>
 </div>
   <div class="row">
-    <div class="column">
+    <div class="firstColumn">
 
       <div class="container">
   	  	   <a href="eaForage.html">
-    	  	   <img src="images/EA_logo.png" alt="EA" class="image" width="55%" height="55%" >
+    	  	   <img src="images/EA_logo.png" alt="EA" class="image" width="55%" height="100%" >
 
     		   	<div class="overlayUnreal">
       			<div class="text">EA Forage Virtual Internship</div>
@@ -212,7 +220,7 @@
 
     		</div>
   		</div>
-		<div class="column">
+	<div class="secondColumn">
 
       <div class="container">
   	  	   <a href="smuckersInternship.html">
